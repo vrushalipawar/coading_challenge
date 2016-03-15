@@ -1,0 +1,22 @@
+<% if !@contacts.blank? %>
+  <% @contacts.each do |contact| %>
+    <div class="number_holder row">
+      <p class="contact_initial"><%= contact.name[0].capitalize %></p>
+      <div class="col-sm-10 contact">
+        <%= contact.name %><br>
+        <%= contact.number %>
+      </div>
+      <div class="col-sm-1 details">
+        <%= link_to '', contact_path(contact), remote: true, class: "glyphicon glyphicon-chevron-right view_details" %>
+      </div>
+    </div>
+  <% end %>
+<% else %>
+  <div>
+    <label>You can dial a phone number and search you contacts</label><br/>
+    <label>Search for 'Sam' by dailing</label><br/>
+    <label>7 + 2 + 6 </label><br/>
+    <label>PQRS ABC MNC</label>
+  </div>
+<% end %>
+<div id="contact-details-modal" class="modal fade"></div>

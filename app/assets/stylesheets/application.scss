@@ -1,0 +1,182 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+img {
+  width: 100%;
+}
+.contact_initial {
+  height: 50px;
+  width: 50px;
+  float: left;
+  display: inline-block;
+  background-color: rgba(28, 99, 153, 0.6);
+  border-radius: 50px;
+  margin-bottom: 0px;
+  margin-top: 9px;
+  vertical-align: middle;
+  font-size: 30px;
+  color: white;
+  padding-top: 14px;
+  text-align: center;
+}
+.contact {
+  font-size: 25px;
+  display: inline-block;
+  width: 85%;
+}
+.details{
+  width: 10%;
+  display: inline-block;
+}
+td {
+  height: 50px;
+  width: 50px;
+}
+td p{
+  margin-bottom: 0px;
+  text-align: center;
+  font-size: 25px;
+}
+.number {
+  font-size: 25px;
+  width: 92%;
+  display: inline-block;
+  margin-bottom: 0px;
+  padding-top: 10px;
+}
+.inserted_number {
+  height: 40px;
+  border-bottom: 1px solid gray;
+  margin-bottom: 2px;
+}
+.inserted_number img{
+  height: 40px;
+  width: 40px;
+  /*height: 25px;
+  width: 25px;*/
+  float: right;
+}
+table {
+  width: 100%;
+}
+td p span{
+  font-size: 15px;
+}
+#show_contacts{
+  height: 50%
+}
+.row{
+  margin-right: 0px;
+  margin-left: 0px;
+}
+.main {
+  height: 580px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.modal-body {
+  height: 100px;
+}
+a:link {
+  color: #333333;
+  text-decoration: none;
+}
+a:hover {
+  color: #333333;
+  text-decoration: none;
+}
+a:visited {
+  color: #333333;
+  text-decoration: none;
+}
+a:active {
+  color: #333333;
+  text-decoration: none;
+}
+tbody tr {
+  border-bottom: 1px solid lightgray;
+  height: 45px;
+}
+tbody tr:last-child {
+  border-bottom: none;
+}
+tr td:nth-child(even) {
+  border-right: 1px solid lightgray;
+  border-left: 1px solid lightgray;
+}
+
+@media screen and (max-width: 767px){
+  .main {
+    height: 200px;
+  }
+  .contact{
+    font-size: 15px;
+    width: 70%
+  }
+  .details {
+    float: right;
+  }
+  .inserted_number img{
+    height: 30px;
+    width: 30px;
+  }
+  .inserted_number {
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 445px){
+  .inserted_number img{
+    height: 25px;
+    width: 25px;
+  }
+  .inserted_number {
+    height: 25px;
+  }
+  .number {
+    font-size: 20px;
+    padding-top: 5px;
+  }
+}
+
+@media screen and (max-width: 367px){
+  .inserted_number img{
+    height: 20px;
+    width: 20px;
+  }
+  .inserted_number {
+    height: 20px;
+  }
+  .number {
+    font-size: 17px;
+    padding-top: 3px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .main {
+    height: 160px;
+  }
+  .contact{
+    font-size: 12px;
+    width: 75%;
+  }
+  .details {
+    float: right;
+  }
+}

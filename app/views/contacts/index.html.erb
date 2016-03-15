@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-sm-12">
+    <%= image_tag("notification.jpg", alt: "notification bar") %>
+    <div class="main row">
+      <br>
+      <div id="show_contacts">
+        <%= render partial: 'contacts/show_contacts' %>
+      </div>
+    </div>
+    <div class="inserted_number row">
+      <p class="number"></p>
+      <%= image_tag("icon.png", size: '25x25', class: "remove_num") %>
+    </div>
+    <%= render partial: 'contacts/dialer' %>
+  </div>
+</div>
